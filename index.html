@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TV Tracker</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap-tpls.min.js"></script>
+</head>
+<body ng-app="app">
+    <header class="app-header">
+        <div class="logo"> TV Tracker</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#/">What's on <div class="arrow-up"></div></a>
+                </li>
+                <li>
+                    <a href="#/my-shows">My Shows <div class="arrow-up"></div></a>
+                </li>
+                <li>
+                    <a href="#/search">Search <div class="arrow-up"></div></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container container" ng-view></main>
+
+    <script src="app.js"></script>
+    <script src="app.core.js"></script>
+    <script src="app.route.js"></script>
+</body>
+</html>
